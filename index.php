@@ -89,3 +89,5 @@ $spanishText = "PHP es UN LENGUAJE, año 2020, programación";
 echo strtoupper($spanishText)."<br>"; // monobyte
 
 echo mb_strtoupper($spanishText)."<br>"; // multibyte
+
+echo "<h1>Regular expressions 🤦🏻‍♂️</h1><br>";

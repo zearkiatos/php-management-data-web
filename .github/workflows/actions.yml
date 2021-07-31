@@ -38,7 +38,7 @@ jobs:
     - name: Install dependencies
       run: |
         composer dump
-        composer Install
+        composer install
     - name: Test 🧪
       run: make run-test
     - name: Build docker 🐳

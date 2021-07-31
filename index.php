@@ -2,49 +2,27 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-var_dump(App\Validate::email('caprilespe@outlook.com'));
-
-// values
-function greet($name)
+$greet = function ($name) // variable with logic
 {
     return "Hello, $name";
+};
+
+echo $greet("Pedro");
+
+function greetNormal(Closure $lang, $name)
+{
+    return $lang($name);
 }
 
-echo "<br>";
+$es = function ($name) {
+    return "Hola, $name";
+};
 
-echo greet("Pedro");
-
-// references
-$course = 'PHP';
-function path(&$course)
-{
-    $course = 'Laravel';
-
-    echo $course;
-}
-echo "<br>";
-path($course);
-echo "<br>";
-echo $course;
-
-// predefine
-
-function greetings($name = "Luis")
-{
+$en = function ($name) {
     return "Hello, $name";
-}
+};
 echo "<br>";
-echo greetings();
+echo greetNormal($es, 'Lynda');
+
 echo "<br>";
-echo greetings('Maria');
-
-function getArray()
-{
-    return ["PDF", "view"];
-}
-echo "<br>";
-var_dump(getArray());
-
-// exit(); //stop the system
-
-// return; // only return a value
+echo greetNormal($en, 'Lynda');

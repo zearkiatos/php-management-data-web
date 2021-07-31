@@ -29,7 +29,7 @@ echo $course;
 
 // predefine
 
-function greetings($name = 'Luis')
+function greetings($name = "Luis")
 {
     return "Hello, $name";
 }
@@ -37,3 +37,14 @@ echo "<br>";
 echo greetings();
 echo "<br>";
 echo greetings('Maria');
+
+function getArray()
+{
+    return ["PDF", "view"];
+}
+echo "<br>";
+var_dump(getArray());
+
+// exit(); //stop the system
+
+// return; // only return a value

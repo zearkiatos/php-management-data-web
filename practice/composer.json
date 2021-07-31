@@ -1,0 +1,17 @@
+{
+    "name": "caprilespe/php-management-data-web",
+    "description": "This is a project to improvement and practice the management data 📚 with PHP 🐘 language programming",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Caprilespe\\PhpManagementDataWeb\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pedro Capriles",
+            "email": "caprilespe@outlook.com"
+        }
+    ],
+    "require": {}
+}

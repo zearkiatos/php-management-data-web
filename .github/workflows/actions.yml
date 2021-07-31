@@ -38,6 +38,8 @@ jobs:
     - name: Install dependencies
       run: |
         composer dump
-        composer install
+        composer Install
+    - name: Test 🧪
+      run: make run-test
     - name: Build docker 🐳
       run: docker build . -t=php-management-php-data-web

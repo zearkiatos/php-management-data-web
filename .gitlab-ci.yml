@@ -42,9 +42,9 @@ test-app:
     - install-dependencies
   script:
     - echo "Testing the app 🧪"
-    - apt-get update
-    - apt-get install build-essential apt-transport-https ca-certificates curl gnupg lsb-release iptables libdevmapper1.02.1 libltdl7 -y
-    - apt-get update
+    - apk update
+    - apk add build-essential apt-transport-https ca-certificates curl gnupg lsb-release iptables libdevmapper1.02.1 libltdl7
+    - apk update
     - make run-test
 
 build-docker:

@@ -19,7 +19,7 @@ jobs:
         php-version: ${{ matrix.php-version }}
         extensions: imagick, swoole
     - name: Generate build number
-      uses: einaregilsson/build-number@v3
+      run: echo "The build number ${{env.GITHUB_RUN_NUMBER}} 🏗"
       with:
         token: ${{ secrets.github_token }}
         prefix: client

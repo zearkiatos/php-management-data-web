@@ -39,4 +39,4 @@ jobs:
     - name: Test 🧪
       run: make run-test
     - name: Build docker 🐳
-      run: docker build . -t=php-management-php-data-web
+      run: docker build . -t=php-management-php-data-web:ghb-$GITHUB_RUN_NUMBER

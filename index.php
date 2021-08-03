@@ -26,3 +26,13 @@ echo greetNormal($es, 'Lynda');
 
 echo "<br>";
 echo greetNormal($en, 'Lynda');
+echo "<br>";
+$courses = [
+    'javascript',
+    'laravel',
+    10 => 'php',
+    'vuejs'
+];
+echo "<pre>";
+var_dump($courses);
+

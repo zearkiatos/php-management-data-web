@@ -20,9 +20,6 @@ jobs:
         extensions: imagick, swoole
     - name: Generate build number
       run: echo "The build number ${{env.GITHUB_RUN_NUMBER}} 🏗"
-      with:
-        token: ${{ secrets.github_token }}
-        prefix: client
     - name: Install PHP and Composer 🧑🏽‍💼🎶
       run: |
         php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&

@@ -19,7 +19,7 @@ jobs:
         php-version: ${{ matrix.php-version }}
         extensions: imagick, swoole
     - name: Generate build number
-      run: echo "The build number ${{env.GITHUB_RUN_NUMBER}} 🏗"
+      run: echo "The build number $GITHUB_RUN_NUMBER 🏗"
     - name: Install PHP and Composer 🧑🏽‍💼🎶
       run: |
         php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&

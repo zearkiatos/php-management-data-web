@@ -28,11 +28,37 @@ echo "<br>";
 echo greetNormal($en, 'Lynda');
 echo "<br>";
 $courses = [
-    'javascript',
-    'laravel',
-    10 => 'php',
-    'vuejs'
+    'frontend' => 'javascript',
+    'framework' => 'laravel',
+    'backend' => 'php',
+    'library' => 'vuejs'
 ];
 echo "<pre>";
 var_dump($courses);
 
+echo "<pre>";
+
+foreach ($courses as $key => $value) {
+    echo "$key: $value <br>";
+}
+echo "<pre>";
+function upper($course, $key)
+{
+    echo strtoupper("$course : $key <br>");
+}
+array_walk($courses, 'upper');
+
+echo "<pre>";
+
+echo (bool)array_key_exists('frontend', $courses);
+echo "<pre>";
+echo (bool)in_array('javascript', $courses);
+
+echo "<pre>";
+var_dump(array_keys($courses));
+
+echo "<pre>";
+var_dump(array_keys($courses));
+
+echo "<pre>";
+var_dump(array_values($courses));

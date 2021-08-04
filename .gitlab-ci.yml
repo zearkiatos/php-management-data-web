@@ -59,4 +59,4 @@ build-docker:
   dependencies:
     - install-dependencies
   script:
-    - docker build . -t=php-management-data-web
+    - docker build . -t=php-management-data-web:glb-${CI_PIPELINE_IID}

@@ -62,3 +62,52 @@ var_dump(array_keys($courses));
 
 echo "<pre>";
 var_dump(array_values($courses));
+
+echo "<pre>";
+
+$courses = [10 => 'php', 100 => 'javascript', 1000 => 'laravel'];
+
+sort($courses);
+
+var_dump($courses);
+
+rsort($courses);
+
+echo "<pre>";
+
+var_dump($courses);
+
+ksort($courses);
+
+echo "<pre>";
+
+var_dump($courses);
+
+echo "<pre>";
+
+var_dump(array_slice($courses, 1));
+
+echo "<pre>";
+
+var_dump(array_chunk($courses, 2));
+
+echo "<pre>";
+
+var_dump(array_shift($courses));
+
+echo "<pre>";
+
+var_dump(array_pop($courses));
+
+
+echo "<pre>";
+
+var_dump(array_unshift($courses));
+
+echo "<pre>";
+
+var_dump(array_push($courses, "C#"));
+
+echo "<pre>";
+
+var_dump(array_flip($courses));

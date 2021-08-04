@@ -35,6 +35,13 @@ install-dependencies:
     - composer dump
     - composer update
     - composer install
+  artifacts:
+    expire_in: 1hr
+    paths:
+      - vendor/
+  cache:
+    paths:
+      - vendor/
 
 test-app:
   stage: test
